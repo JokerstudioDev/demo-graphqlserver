@@ -33,7 +33,7 @@ var queryType = new graphql.GraphQLObjectType({
     name: "QueryAccount",
     description: "query account informations",
     fields: () => ({
-      accounts: {
+      allaccounts: {
         type: new graphql.GraphQLList(AccountType),
         description: "ดึงข้อมูล account ทั้งหมดที่มีในระบบ",
         resolve: function(_, args){
